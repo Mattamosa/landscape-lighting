@@ -3,8 +3,8 @@
 
 <head>
 	<meta charset="utf-8"/>
-	<title>Navigation Example</title>
-    <meta name="description" content="TechFusion Summit 2023 - New York">
+	<title>Greensprout Landscaping</title>
+    <meta name="description" content="Greensprout Landscaping">
     <meta name="author" content="Matthew Amosa">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -12,18 +12,25 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
 
-<!-- Google Font -->
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500&display=swap" rel="stylesheet">
+    <!-- Fav icons stuff -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
 
 </head>
 
 <body>
 <div id="headerWrapper">
 	<header>
-        <img src="images/logo1x.png" alt="logo">
-		<h1>Design Thinking</h1>
+        <a href="index.html"><img src="images/logo1x.png" alt="logo" width="71" height="50" srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x"></a>
+        <div id="phone-link-container">
+            <a href="tel:+8001234567" class="phone-link">1-800-123-4567</a>
+        </div>
 	</header>
 </div><!-- end header wrapper -->
 
@@ -33,15 +40,15 @@
     <nav>
         <button id="hamburgerBtn">&#9776;</button>
         <ul id="primaryNav">
-        <li><a href="#">Clients</a>
-        <li class="parent"><a href="#">Services</a>
+        <li><a href="#">Services</a>
+        <li class="parent"><a href="#">Clients</a>
         <ul>
             <li><a href="#">Brand Identity</a>
             <li><a href="#">Style Guide</a></li>
             <li><a href="#">Design System</a></li>
         </ul>
         </li>
-        <li class="parent"><a href="#">Best Practices</a>
+        <li class="parent"><a href="#">Blog</a>
         <ul>
             <li><a href="#">User Experience</a></li>
             <li class="active"><a href="#">Usability Testing</a></li>
@@ -49,7 +56,7 @@
             <li><a href="#">Information Architecture</a></li>
         </ul>
         </li>
-        <li><a href="#">Our Team</a></li>
+        <li><a href="#">Locations</a></li>
         <li><a href="#">Contact</a></li>
     </ul>
     </nav>
@@ -57,7 +64,7 @@
 
 <div id="mainWrapper">
     <main>
-        <h1>Swiper Practice</h1>
+        
 
 <!-- Slider main container -->
 <div class="swiper">
@@ -97,7 +104,23 @@
   </div>
   
 
+<h1>Customers Say</h1>
+<div class="reviews">
+      <section>
+          <img src="images/customer1.webp" width="200" height="200" alt="customer One">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur ab, odit aut ipsam eius tempore eveniet molestias hic sunt soluta quidem ducimus, laudantium libero accusamus iusto itaque natus. Expedita, sapiente.</p>
+      </section>
+      <section>
+        <img src="images/customer2.webp" width="200" height="200" alt="customer Two">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur vero sunt eos, maxime ab pariatur perspiciatis praesentium dignissimos omnis reprehenderit accusamus, nesciunt consequatur nulla repudiandae. Reprehenderit blanditiis vero ducimus rerum.</p>
+    </section>
 
+
+
+
+
+
+  </div>
 
     </main>
 </div><!-- end main wrapper -->

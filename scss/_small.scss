@@ -36,11 +36,30 @@ header {
 /* NAVIGATION STUFF GOES HERE  */
 
 /* MAIN  */
+/* SLIDER CARDS START */
 .swiper,
 .swiper img {
   width: 100%;
   height: auto;
 }
+
+/* CUSTOMER REVIEWS START */
+div.reviews {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  section {
+    padding: 7px;
+    img {
+      width: 100%;
+      height: auto;
+      clip-path: circle(50% at 50% 50%);
+      transition: transform 1s;
+      &:hover {
+        transform: rotate(2deg);
+      }
+    }
+  } // End Section
+} // End Parent
 
 // end main
 

@@ -54,3 +54,17 @@ nav {
     background-color: rgba(0, 0, 0, 0.25);
   }
 } // END NAV
+
+/* MAIN  */
+
+/* CUSTOMER REVIEWS START */
+div.reviews {
+  section {
+    display: grid;
+    grid-template-columns: 140px auto;
+    column-gap: 10px;
+    padding: 10px;
+    img {
+    }
+  } // End Section
+} // End Parent

@@ -136,10 +136,30 @@ header h1 {
 
 /* NAVIGATION STUFF GOES HERE  */
 /* MAIN  */
+/* SLIDER CARDS START */
 .swiper,
 .swiper img {
   width: 100%;
   height: auto;
+}
+
+/* CUSTOMER REVIEWS START */
+div.reviews {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+div.reviews section {
+  padding: 7px;
+}
+div.reviews section img {
+  width: 100%;
+  height: auto;
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+  transition: transform 1s;
+}
+div.reviews section img:hover {
+  transform: rotate(2deg);
 }
 
 /* FOOTER  */
@@ -284,6 +304,15 @@ footer a {
   nav li.active a {
     background-color: rgba(0, 0, 0, 0.25);
   }
+  /* MAIN  */
+  /* CUSTOMER REVIEWS START */
+  div.reviews section {
+    display: grid;
+    grid-template-columns: 140px auto;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    padding: 10px;
+  }
 }
 @media only screen and (min-width: 64rem) {
   header,
@@ -296,5 +325,12 @@ footer a {
   nav ul li a {
     font-size: 0.9rem;
     padding: 0.5rem 1.2rem;
+  }
+  /* MAIN  */
+  /* CUSTOMER REVIEWS START */
+  div.reviews section {
+    grid-template-columns: 200px auto;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
   }
 }
