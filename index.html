@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Navigation Example</title>
+    <meta name="description" content="TechFusion Summit 2023 - New York">
+    <meta name="author" content="Matthew Amosa">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<div id="headerWrapper">
+	<header>
+        <img src="images/logo1x.png" alt="logo">
+		<h1>Design Thinking</h1>
+	</header>
+</div><!-- end header wrapper -->
+
+    
+    
+<div id="navWrapper">
+    <nav>
+        <button id="hamburgerBtn">&#9776;</button>
+        <ul id="primaryNav">
+        <li><a href="#">Clients</a>
+        <li class="parent"><a href="#">Services</a>
+        <ul>
+            <li><a href="#">Brand Identity</a>
+            <li><a href="#">Style Guide</a></li>
+            <li><a href="#">Design System</a></li>
+        </ul>
+        </li>
+        <li class="parent"><a href="#">Best Practices</a>
+        <ul>
+            <li><a href="#">User Experience</a></li>
+            <li class="active"><a href="#">Usability Testing</a></li>
+            <li><a href="#">User Personas</a></li>
+            <li><a href="#">Information Architecture</a></li>
+        </ul>
+        </li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    </nav>
+</div> <!-- end nav wrapper -->
+
+<div id="mainWrapper">
+    <main>
+        <h1>Swiper Practice</h1>
+
+<!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <picture>
+            <source srcset="images/slide1-small.webp" media="(max-width: 746px)">
+            <source srcset="images/slide1-medium.webp" media="(max-width: 1172px)">
+            <source srcset="images/slide1-large.webp" media="(max-width: 1600px)">
+            <img src="images/slide1-large.webp" alt="SliderA" width="1600px" height="500px">
+        </picture>
+        </div><!-- End of one slide -->
+
+      <div class="swiper-slide">
+        <picture>
+            <source srcset="images/slide2-small.webp" media="(max-width: 746px)">
+            <source srcset="images/slide2-medium.webp" media="(max-width: 1172px)">
+            <source srcset="images/slide2-large.webp" media="(max-width: 1600px)">
+            <img src="images/slide2-large.webp" alt="SliderB" width="1600px" height="500px">
+        </picture>
+        </div><!-- End of one slide -->
+    
+      <div class="swiper-slide">
+        <picture>
+            <source srcset="images/slide3-small.webp" media="(max-width: 746px)">
+            <source srcset="images/slide3-medium.webp" media="(max-width: 1172px)">
+            <source srcset="images/slide3-large.webp" media="(max-width: 1600px)">
+            <img src="images/slide3-large.webp" alt="SliderC" width="1600px" height="500px">
+        </picture>
+        </div><!-- End of one slide -->
+
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+  
+
+
+
+    </main>
+</div><!-- end main wrapper -->
+    
+<div id="footerWrapper">
+    <footer>
+        <p>Copyright &copy; 2022 Design Thinking Inc. All rights reserved. 
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Sales</a> | <a href="#">Clients</a></p>
+    </footer>
+</div> <!-- end footer wrapper -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html> 
