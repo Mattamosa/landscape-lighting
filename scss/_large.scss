@@ -4,6 +4,23 @@ main {
   max-width: 1240px;
   margin: auto;
 }
+/* PHONE LINK STUFF */
+#headerWrapper {
+  max-width: 1240px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#phone-link-container {
+  position: absolute;
+  top: 1rem;
+  right: 1.3rem;
+  margin: 10px;
+}
+
+a.phone-link {
+  font-size: 1.4rem;
+}
 
 /* START OF HEADER  */
 header {

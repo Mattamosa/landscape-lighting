@@ -41,7 +41,7 @@ header {
   margin: 0 12px;
   padding-right: 0;
   a.phone-link {
-    color: red;
+    color: $menuColor;
     text-decoration: none;
     font-weight: $normalWeight;
   }
@@ -80,6 +80,7 @@ header {
     line-height: 1.5rem;
   }
 }
+
 // END OF SLIDER SECTION
 
 /* START OF 4 MASKING IMAGES */
@@ -89,6 +90,7 @@ div#mainWrapper main div.mask-head h1 {
   border-bottom: none;
   padding: 0.8rem;
   font-size: 1.3rem;
+  box-shadow: none;
 }
 
 div.masks {
@@ -130,6 +132,7 @@ div#mainWrapper main h1 {
   padding: 0.5rem;
   font-size: 1.2rem;
   text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 div.reviews {
@@ -148,7 +151,7 @@ div.reviews {
       clip-path: circle(50% at 50% 50%);
       transition: transform 1s;
       &:hover {
-        transform: rotate(2deg);
+        transform: rotate(4deg);
       }
     }
   } // End Section

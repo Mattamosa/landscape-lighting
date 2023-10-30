@@ -144,7 +144,7 @@ header h1 {
   padding-right: 0;
 }
 #phone-link-container a.phone-link {
-  color: red;
+  color: #4c462c;
   text-decoration: none;
   font-weight: 500;
 }
@@ -187,6 +187,7 @@ div#mainWrapper main div.mask-head h1 {
   border-bottom: none;
   padding: 0.8rem;
   font-size: 1.3rem;
+  box-shadow: none;
 }
 
 div.masks {
@@ -228,6 +229,7 @@ div#mainWrapper main h1 {
   padding: 0.5rem;
   font-size: 1.2rem;
   text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 div.reviews {
@@ -250,7 +252,7 @@ div.reviews section img {
   transition: transform 1s;
 }
 div.reviews section img:hover {
-  transform: rotate(2deg);
+  transform: rotate(4deg);
 }
 
 /* ------- END OF MAIN ------- */
@@ -346,6 +348,9 @@ footer {
   /* START OF HEADER  */
   header {
     margin: 0.5rem 0;
+  }
+  a.phone-link {
+    font-size: 1.2rem;
   }
   /* NAVIGATION STUFF GOES HERE  */
   nav button {
@@ -454,6 +459,21 @@ footer {
   main {
     max-width: 1240px;
     margin: auto;
+  }
+  /* PHONE LINK STUFF */
+  #headerWrapper {
+    max-width: 1240px;
+    margin: 0 auto;
+    position: relative;
+  }
+  #phone-link-container {
+    position: absolute;
+    top: 1rem;
+    right: 1.3rem;
+    margin: 10px;
+  }
+  a.phone-link {
+    font-size: 1.4rem;
   }
   /* START OF HEADER  */
   header {
