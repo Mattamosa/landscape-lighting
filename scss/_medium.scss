@@ -1,3 +1,8 @@
+/* START OF HEADER  */
+header {
+  margin: 0.5rem 0;
+}
+
 /* NAVIGATION STUFF GOES HERE  */
 nav button {
   display: none;
@@ -21,6 +26,7 @@ nav {
     color: rgba(255, 255, 255, 0.9);
     text-decoration: none;
     transition: background 0.3s linear;
+    font-weight: $normalWeight;
   }
   ul li a:hover {
     background: rgba(0, 0, 0, 0.5);
@@ -70,19 +76,39 @@ nav {
 // END OF SLIDER SECTION
 
 /* 4 MASKING IMAGES */
+div#mainWrapper main div.mask-head h1 {
+  padding: 0.8rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.6rem;
+}
+
 div.masks {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-bottom: 2rem;
 }
 
 /* CUSTOMER REVIEWS START */
+div#mainWrapper main h1 {
+  margin: 0.8rem 0.6rem;
+}
+
 div.reviews {
+  margin: 0 0.4rem;
   section {
     display: grid;
     grid-template-columns: 140px auto;
     column-gap: 10px;
     padding: 10px;
+    p {
+      margin-top: 0;
+      padding: 0.4rem;
+      font-size: 1rem;
+      align-self: center;
+      line-height: 1.3rem;
+    }
     img {
+      align-self: center;
     }
   }
 } // CUSTOMER REVIEWS END

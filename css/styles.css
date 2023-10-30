@@ -127,6 +127,7 @@ header {
   grid-template-columns: 51px auto;
   align-items: center;
   padding: 0.5rem 2vw;
+  margin: 0.3rem 0;
 }
 header h1 {
   font-size: 1.6rem;
@@ -180,6 +181,14 @@ header h1 {
 }
 
 /* START OF 4 MASKING IMAGES */
+div#mainWrapper main div.mask-head h1 {
+  background-color: #ffffff;
+  color: #4a2b29;
+  border-bottom: none;
+  padding: 0.8rem;
+  font-size: 1.3rem;
+}
+
 div.masks {
   display: grid;
 }
@@ -209,12 +218,29 @@ div.masks section img:last-child {
 }
 
 /* CUSTOMER REVIEWS START */
+div#mainWrapper main h1 {
+  color: white;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom: 2px solid #c4a727;
+  background-color: #4c462c;
+  margin: 0.6rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
 div.reviews {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 div.reviews section {
-  padding: 7px;
+  padding: 0.7rem;
+}
+div.reviews section p {
+  margin-top: 0.5rem;
+  text-align: left;
+  line-height: 1.2rem;
 }
 div.reviews section img {
   width: 100%;
@@ -230,17 +256,15 @@ div.reviews section img:hover {
 /* ------- END OF MAIN ------- */
 /* START OF FOOTER  */
 #footerWrapper {
-  background-color: #1b1b1b;
+  background-color: #4c462c;
 }
 
 footer {
   font-size: 0.85rem;
-  padding: 1rem 0;
-  color: #bbb;
+  padding: 0.6rem 0;
+  color: #ffffff;
   text-align: center;
-}
-footer a {
-  color: #eee;
+  margin-top: 1rem;
 }
 
 /*Adjust the media query max-width value on line 5 to match your breakpoint between the small and medium screens OR between the medium and large screens*/
@@ -280,6 +304,7 @@ footer a {
     color: white;
     text-decoration: none;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
+    font-weight: 500;
   }
   #primaryNav li a:hover {
     background-color: rgba(0, 0, 0, 0.5);
@@ -318,6 +343,10 @@ footer a {
   }
 } /* End Mobile Styles */
 @media only screen and (min-width: 35rem) {
+  /* START OF HEADER  */
+  header {
+    margin: 0.5rem 0;
+  }
   /* NAVIGATION STUFF GOES HERE  */
   nav button {
     display: none;
@@ -339,6 +368,7 @@ footer a {
     color: rgba(255, 255, 255, 0.9);
     text-decoration: none;
     transition: background 0.3s linear;
+    font-weight: 500;
   }
   nav ul li a:hover {
     background: rgba(0, 0, 0, 0.5);
@@ -383,17 +413,39 @@ footer a {
     font-size: 1.1rem;
   }
   /* 4 MASKING IMAGES */
+  div#mainWrapper main div.mask-head h1 {
+    padding: 0.8rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+  }
   div.masks {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 2rem;
   }
   /* CUSTOMER REVIEWS START */
+  div#mainWrapper main h1 {
+    margin: 0.8rem 0.6rem;
+  }
+  div.reviews {
+    margin: 0 0.4rem;
+  }
   div.reviews section {
     display: grid;
     grid-template-columns: 140px auto;
     -moz-column-gap: 10px;
          column-gap: 10px;
     padding: 10px;
+  }
+  div.reviews section p {
+    margin-top: 0;
+    padding: 0.4rem;
+    font-size: 1rem;
+    align-self: center;
+    line-height: 1.3rem;
+  }
+  div.reviews section img {
+    align-self: center;
   }
 }
 @media only screen and (min-width: 64rem) {
@@ -402,6 +454,11 @@ footer a {
   main {
     max-width: 1240px;
     margin: auto;
+  }
+  /* START OF HEADER  */
+  header {
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
   }
   /* NAVIGATION STUFF GOES HERE  */
   nav ul li a {
@@ -429,5 +486,11 @@ footer a {
     grid-template-columns: 200px auto;
     -moz-column-gap: 10px;
          column-gap: 10px;
+  }
+  div.reviews section p {
+    align-self: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
   }
 }

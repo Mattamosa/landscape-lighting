@@ -40,7 +40,7 @@
     <nav>
         <button id="hamburgerBtn">&#9776;</button>
         <ul id="primaryNav">
-        <li><a href="#">Services</a>
+        <li class="active"><a href="#">Services</a>
         <li class="parent"><a href="#">Clients</a>
         <ul>
             <li><a href="#">Brand Identity</a>
@@ -51,7 +51,7 @@
         <li class="parent"><a href="#">Blog</a>
         <ul>
             <li><a href="#">User Experience</a></li>
-            <li class="active"><a href="#">Usability Testing</a></li>
+            <li><a href="#">Usability Testing</a></li>
             <li><a href="#">User Personas</a></li>
             <li><a href="#">Information Architecture</a></li>
         </ul>
@@ -102,12 +102,16 @@
         </div><!-- End of one slide -->
 
     </div>
+    
     <!-- If we need pagination -->
     <div class="swiper-pagination"></div>
   </div>
   
-
+  <div class="mask-head">
+    <h1>Services</h1>
+</div>
   <div class="masks">
+    
     <section>
         <h2>Lawn Care</h2>
         <img src="images/lawn-care.webp" width="400" height="250" alt="cutting grass" loading="lazy">
@@ -134,11 +138,11 @@
 <div class="reviews">
       <section>
           <img src="images/customer1.webp" width="200" height="200" alt="customer One" loading="lazy">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur ab, odit aut ipsam eius tempore eveniet molestias hic sunt soluta quidem ducimus, laudantium libero accusamus iusto itaque natus. Expedita, sapiente.</p>
+          <p>Outstanding work! Our backyard was a mess, but Greensprout Landscaping turned it into a beautiful, vibrant oasis. The team was professional, and the results speak for themselves. We're thrilled with our new lawn and garden.</p>
       </section>
       <section>
         <img src="images/customer2.webp" width="200" height="200" alt="customer Two" loading="lazy">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur vero sunt eos, maxime ab pariatur perspiciatis praesentium dignissimos omnis reprehenderit accusamus, nesciunt consequatur nulla repudiandae. Reprehenderit blanditiis vero ducimus rerum.</p>
+        <p>Amazing service! Greensprout Landscaping transformed our front yard into a welcoming, elegant landscape. From lawn care to hardscape design, they did it all. We couldn't be happier with the quality of their work and attention to detail.</p>
     </section>
   </div>
 
@@ -147,9 +151,8 @@
     
 <div id="footerWrapper">
     <footer>
-        <p>Copyright &copy; 2022 Design Thinking Inc. All rights reserved. 
-            <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Sales</a> | <a href="#">Clients</a></p>
-    </footer>
+        <p>&copy; <span id="year">x</span> &bull; Matthew Amosa</p>
+      </footer>
 </div> <!-- end footer wrapper -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

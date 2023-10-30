@@ -25,6 +25,7 @@ header {
   grid-template-columns: 51px auto;
   align-items: center;
   padding: 0.5rem 2vw;
+  margin: 0.3rem 0;
   h1 {
     font-size: 1.6rem;
     font-weight: $lightWeight;
@@ -82,6 +83,14 @@ header {
 // END OF SLIDER SECTION
 
 /* START OF 4 MASKING IMAGES */
+div#mainWrapper main div.mask-head h1 {
+  background-color: #ffffff;
+  color: #4a2b29;
+  border-bottom: none;
+  padding: 0.8rem;
+  font-size: 1.3rem;
+}
+
 div.masks {
   display: grid;
   section {
@@ -111,11 +120,28 @@ div.masks {
 }
 
 /* CUSTOMER REVIEWS START */
+div#mainWrapper main h1 {
+  color: white;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom: 2px solid #c4a727;
+  background-color: #4c462c;
+  margin: 0.6rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
 div.reviews {
   display: grid;
   grid-template-columns: 1fr 1fr;
   section {
-    padding: 7px;
+    padding: 0.7rem;
+    p {
+      margin-top: 0.5rem;
+      text-align: left;
+      line-height: 1.2rem;
+    }
     img {
       width: 100%;
       height: auto;
@@ -133,15 +159,13 @@ div.reviews {
 
 /* START OF FOOTER  */
 #footerWrapper {
-  background-color: #1b1b1b;
+  background-color: $menuColor;
 }
 footer {
   font-size: 0.85rem;
-  padding: 1rem 0;
-  color: #bbb;
+  padding: 0.6rem 0;
+  color: #ffffff;
   text-align: center;
-  a {
-    color: #eee;
-  }
+  margin-top: 1rem;
 }
 // END OF FOOTER

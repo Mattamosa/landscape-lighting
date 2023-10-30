@@ -5,6 +5,12 @@ main {
   margin: auto;
 }
 
+/* START OF HEADER  */
+header {
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
 /* NAVIGATION STUFF GOES HERE  */
 nav ul li a {
   font-size: 0.9rem;
@@ -36,5 +42,11 @@ div.reviews {
   section {
     grid-template-columns: 200px auto;
     column-gap: 10px;
+    p {
+      align-self: center;
+      padding: 1rem;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+    }
   } // End Section
 } // End Parent
