@@ -135,10 +135,10 @@ div#mainWrapper main h1 {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-div.reviews {
+.reviews {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  section {
+  div {
     padding: 0.7rem;
     p {
       margin-top: 0.5rem;

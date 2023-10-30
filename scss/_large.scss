@@ -55,8 +55,8 @@ div.masks {
 }
 
 /* CUSTOMER REVIEWS START */
-div.reviews {
-  section {
+.reviews {
+  div {
     grid-template-columns: 200px auto;
     column-gap: 10px;
     p {
