@@ -13,6 +13,24 @@ nav ul li a {
 
 /* MAIN  */
 
+/* START OF SLIDER */
+.swiper-heading {
+  left: 0.65rem;
+  padding: 0.8rem;
+  h3,
+  p {
+    line-height: 1.7rem;
+    font-size: 1.3rem;
+  }
+}
+// END OF SLIDER SECTION
+
+/* 4 MASKING IMAGES */
+div.masks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 /* CUSTOMER REVIEWS START */
 div.reviews {
   section {

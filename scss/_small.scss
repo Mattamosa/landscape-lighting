@@ -19,7 +19,7 @@ body {
   min-width: 320px;
 }
 
-/* HEADER  */
+/* START OF HEADER  */
 header {
   display: grid;
   grid-template-columns: 51px auto;
@@ -31,16 +31,83 @@ header {
     padding-left: 0.5rem;
     color: $primaryColor;
   }
-} // end header
+}
+
+#phone-link-container {
+  position: absolute;
+  right: 0;
+  text-align: center;
+  margin: 0 12px;
+  padding-right: 0;
+  a.phone-link {
+    color: red;
+    text-decoration: none;
+    font-weight: $normalWeight;
+  }
+}
+// END OF HEADER
 
 /* NAVIGATION STUFF GOES HERE  */
 
-/* MAIN  */
-/* SLIDER CARDS START */
+/* ------- MAIN  START ------- */
+
+/* START OF SLIDER */
 .swiper,
 .swiper img {
   width: 100%;
   height: auto;
+}
+
+.swiper {
+  position: relative;
+}
+
+.swiper-heading {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 0.6rem;
+  width: auto;
+  padding: 10px;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.617);
+  border-radius: 0.5rem;
+  h3,
+  p {
+    color: #ffffff;
+    text-align: left;
+    line-height: 1.5rem;
+  }
+}
+// END OF SLIDER SECTION
+
+/* START OF 4 MASKING IMAGES */
+div.masks {
+  display: grid;
+  section {
+    margin: 0.5rem;
+    border: 1px solid white;
+    position: relative;
+    h2 {
+      background-color: #391714e8;
+      color: white;
+      text-align: center;
+      padding: 0.5rem;
+      border-top-right-radius: 1rem;
+      border-top-left-radius: 1rem;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-bottom-left-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+    }
+    img:last-child {
+      position: absolute;
+      bottom: 0;
+    }
+  }
 }
 
 /* CUSTOMER REVIEWS START */
@@ -60,10 +127,11 @@ div.reviews {
     }
   } // End Section
 } // End Parent
+// END OF CUSTOMER REVIEWS
 
-// end main
+/* ------- END OF MAIN ------- */
 
-/* FOOTER  */
+/* START OF FOOTER  */
 #footerWrapper {
   background-color: #1b1b1b;
 }
@@ -76,3 +144,4 @@ footer {
     color: #eee;
   }
 }
+// END OF FOOTER

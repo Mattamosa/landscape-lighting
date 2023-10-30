@@ -101,6 +101,7 @@ input, select {
   vertical-align: middle;
 }
 
+/* potential colors */
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {
   -webkit-text-size-adjust: 100%;
@@ -120,7 +121,7 @@ body {
   min-width: 320px;
 }
 
-/* HEADER  */
+/* START OF HEADER  */
 header {
   display: grid;
   grid-template-columns: 51px auto;
@@ -134,13 +135,77 @@ header h1 {
   color: #cc7a26;
 }
 
+#phone-link-container {
+  position: absolute;
+  right: 0;
+  text-align: center;
+  margin: 0 12px;
+  padding-right: 0;
+}
+#phone-link-container a.phone-link {
+  color: red;
+  text-decoration: none;
+  font-weight: 500;
+}
+
 /* NAVIGATION STUFF GOES HERE  */
-/* MAIN  */
-/* SLIDER CARDS START */
+/* ------- MAIN  START ------- */
+/* START OF SLIDER */
 .swiper,
 .swiper img {
   width: 100%;
   height: auto;
+}
+
+.swiper {
+  position: relative;
+}
+
+.swiper-heading {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 0.6rem;
+  width: auto;
+  padding: 10px;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.617);
+  border-radius: 0.5rem;
+}
+.swiper-heading h3,
+.swiper-heading p {
+  color: #ffffff;
+  text-align: left;
+  line-height: 1.5rem;
+}
+
+/* START OF 4 MASKING IMAGES */
+div.masks {
+  display: grid;
+}
+div.masks section {
+  margin: 0.5rem;
+  border: 1px solid white;
+  position: relative;
+}
+div.masks section h2 {
+  background-color: rgba(57, 23, 20, 0.9098039216);
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+div.masks section img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+div.masks section img:last-child {
+  position: absolute;
+  bottom: 0;
 }
 
 /* CUSTOMER REVIEWS START */
@@ -162,7 +227,8 @@ div.reviews section img:hover {
   transform: rotate(2deg);
 }
 
-/* FOOTER  */
+/* ------- END OF MAIN ------- */
+/* START OF FOOTER  */
 #footerWrapper {
   background-color: #1b1b1b;
 }
@@ -180,7 +246,7 @@ footer a {
 /*Adjust the media query max-width value on line 5 to match your breakpoint between the small and medium screens OR between the medium and large screens*/
 @media only screen and (max-width: 34.9375rem) {
   nav {
-    background-color: #0aa;
+    background-color: #4c462c;
   }
   /* Navigation Button  -------------------------------------------------------- */
   nav button {
@@ -257,7 +323,7 @@ footer a {
     display: none;
   }
   nav {
-    background-color: #0aa;
+    background-color: #4c462c;
   }
   nav ul {
     display: flex;
@@ -286,7 +352,7 @@ footer a {
   nav ul li ul {
     display: flex;
     flex-direction: column;
-    background-color: #009191;
+    background-color: #3c3723;
     border: none;
     width: 14rem;
     position: absolute;
@@ -305,6 +371,22 @@ footer a {
     background-color: rgba(0, 0, 0, 0.25);
   }
   /* MAIN  */
+  /* START OF SLIDER */
+  .swiper-heading {
+    bottom: 1rem;
+    left: 0.55rem;
+    padding: 15px;
+  }
+  .swiper-heading h3,
+  .swiper-heading p {
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+  }
+  /* 4 MASKING IMAGES */
+  div.masks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   /* CUSTOMER REVIEWS START */
   div.reviews section {
     display: grid;
@@ -327,6 +409,21 @@ footer a {
     padding: 0.5rem 1.2rem;
   }
   /* MAIN  */
+  /* START OF SLIDER */
+  .swiper-heading {
+    left: 0.65rem;
+    padding: 0.8rem;
+  }
+  .swiper-heading h3,
+  .swiper-heading p {
+    line-height: 1.7rem;
+    font-size: 1.3rem;
+  }
+  /* 4 MASKING IMAGES */
+  div.masks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
   /* CUSTOMER REVIEWS START */
   div.reviews section {
     grid-template-columns: 200px auto;

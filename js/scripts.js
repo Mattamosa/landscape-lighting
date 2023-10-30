@@ -7,7 +7,7 @@ hb.addEventListener('click', () => {
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   loop: true,
-  effect: 'cube',
+  effect: 'slide',
   speed: 2000,
 
   // If we need pagination
